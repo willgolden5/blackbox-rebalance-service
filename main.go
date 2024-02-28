@@ -9,7 +9,7 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/rebalance", func(c *gin.Context) {
-		rebalance.RebalanceUserPortfolios("test")
+		rebalance.RebalanceUserPortfolios("congress_buys")
 		c.JSON(200, gin.H{
 			"message": "hit",
 		})
