@@ -8,7 +8,7 @@ import (
 	"github.com/supabase-community/supabase-go"
 )
 
-func getUsersByActiveStrategy(strategyId string) ([]StrategyUser, error) {
+func getUsersWithActiveStrategy(strategyId string) ([]StrategyUser, error) {
 	// gets all users with an active strategy of a specific strategyId from ActiveStrategies table
 	// returns a list of userId, amount, and alpacaId
 	var API_URL = os.Getenv("SUPABASE_API_URL")

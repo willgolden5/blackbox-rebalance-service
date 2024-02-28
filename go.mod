@@ -3,6 +3,8 @@ module github.com/willgolden5/blackbox-rebalance-service
 go 1.19
 
 require (
+	cloud.google.com/go v0.112.1 // indirect
+	github.com/alpacahq/alpaca-trade-api-go/v3 v3.2.2 // indirect
 	github.com/bytedance/sonic v1.11.1 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
 	github.com/chenzhuoyu/iasm v0.9.1 // indirect
@@ -14,13 +16,16 @@ require (
 	github.com/go-playground/validator/v10 v10.18.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
+	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
+	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.1 // indirect
+	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/supabase-community/supabase-go v0.0.1 // indirect
 	github.com/supabase/postgrest-go v0.0.7 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect

@@ -8,7 +8,7 @@ import (
 func RebalanceUserPortfolios(strategyId string) {
 	// FIRST:
 	// get users from ActiveStrategies table where active strategyId = strategyId
-	data, err := getUsersByActiveStrategy(strategyId)
+	data, err := getUsersWithActiveStrategy(strategyId)
 	if err != nil {
 		fmt.Println("error getting users by active strategy", err)
 		return
