@@ -8,7 +8,16 @@ import (
 func RebalanceUserPortfolios(strategyId string) {
 	// FIRST:
 	// get users from ActiveStrategies table where active strategyId = strategyId
-	getUsersByActiveStrategy(strategyId)
+	data, err := getUsersByActiveStrategy(strategyId)
+	if err != nil {
+		fmt.Println("error getting users by active strategy", err)
+		return
+	}
+	if data == nil {
+		fmt.Println("no users with active strategy", strategyId)
+		return
+	}
+	fmt.Println(data)
 	// for each user:
 	// get their alpaca account =>
 	// get the active positions from their alpaca account =>
