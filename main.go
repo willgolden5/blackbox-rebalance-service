@@ -15,9 +15,11 @@ func main() {
 	}
 	router := gin.Default()
 
-	router.GET("/rebalance", func(c *gin.Context) {
-		rebalance.RebalanceUserPortfolios("congress_buys")
-		c.JSON(200, gin.H{
+	router.GET("/rebalance", func(ctx *gin.Context) {
+		activeStrategyId := ctx.Query("activeStrategyId")
+
+		go rebalance.RebalanceUserPortfolios(activeStrategyId)
+		ctx.JSON(200, gin.H{
 			"message": "hit",
 		})
 	})
