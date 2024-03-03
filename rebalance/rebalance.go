@@ -5,16 +5,16 @@ import (
 )
 
 // call this in a goRoutine
-func RebalanceUserPortfolios(strategyId string) {
+func RebalanceUserPortfolios(activeStrategyId string) {
 	// FIRST:
-	// get users from ActiveStrategies table where active strategyId = strategyId
-	data, err := getActiveStrategyListing(strategyId)
+	// get users from ActiveStrategies table where activeStrategyId =
+	data, err := getActiveStrategyListing(activeStrategyId)
 	if err != nil {
 		fmt.Println("error getting users by active strategy", err)
 		return
 	}
 	if data == nil {
-		fmt.Println("no users with active strategy", strategyId)
+		fmt.Println("Active strategy does not exist.", activeStrategyId)
 		return
 	}
 	fmt.Println(data)
