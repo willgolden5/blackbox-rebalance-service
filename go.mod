@@ -2,6 +2,8 @@ module github.com/willgolden5/blackbox-rebalance-service
 
 go 1.19
 
+require github.com/alpacahq/alpaca-trade-api-go v1.9.0
+
 require (
 	cloud.google.com/go v0.112.1 // indirect
 	github.com/alpacahq/alpaca-trade-api-go/v3 v3.2.2 // indirect
@@ -15,6 +17,7 @@ require (
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.18.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
+	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect

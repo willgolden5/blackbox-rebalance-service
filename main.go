@@ -18,7 +18,7 @@ func main() {
 	router.GET("/rebalance", func(ctx *gin.Context) {
 		activeStrategyId := ctx.Query("activeStrategyId")
 
-		go rebalance.RebalanceUserPortfolios(activeStrategyId)
+		go rebalance.RebalanceUserPortfolio(activeStrategyId)
 		ctx.JSON(200, gin.H{
 			"message": "hit",
 		})
